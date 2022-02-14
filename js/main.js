@@ -1,22 +1,3 @@
-//HEADER
-// 통합검색 창 설정
-const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
-
-searchEl.addEventListener('click', function () {
-  searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus', function() {
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-});
-
-searchInputEl.addEventListener('blur', function() {
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder', '');
-});
-
 // 뱃지 설정
 //_.throttle(함수, 시간ms) : 화면제어 이벤트 시, 실행되는 횟수 제한함 (lodash.js 함수)
 //gsap.to(요소, 지속시간s, 옵션) : JS 애니메이션 효과 (gsap.js)
@@ -147,7 +128,3 @@ new Swiper('.awards .swiper', {
     nextEl: '.awards .swiper-next'
   }
 })
-
-//FOOTER
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
