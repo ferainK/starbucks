@@ -15,6 +15,11 @@ a{
   text-decoration: none;
 }
 
+strong{
+  color: #063;
+  font-weight: 700;
+}
+
 .inner{
   width: 1100px;
   margin: 0 auto;
